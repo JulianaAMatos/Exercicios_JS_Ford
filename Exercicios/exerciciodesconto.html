@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    const cliente= (prompt("Determine o nível"))
+    const funcionário= 'Funcionário'
+    const clienteComum = 'Cliente'
+    const clienteVip= 'Vip'
+
+    const valorTotal= 150
+
+    switch (cliente) {
+  case funcionário:
+    alert(`É funcionário da nossa loja e possuí 10% de desconto `)
+    break;
+  case clienteVip:
+    alert(`O cliente possuí 5% de desconto`)
+    break;
+  default:
+    alert(`Não possui cadastro na loja, o valor da compra é ${valorTotal}`)
+    break;
+}
+    </script>
+    
+</body>
+</html>

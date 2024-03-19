@@ -3,7 +3,6 @@
 // desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que:
 
 
-
 // - Se quantidade <= 5 o desconto será de 2%
 // - Se quantidade > 5 e quantidade <=10 o desconto será de 3%
 // - Se quantidade > 10 o desconto será de 5%
@@ -21,5 +20,25 @@
 // = realidar o calculo do desconto com base na quantidade de produtos que o usuário vai comprar
 
 //saída de dados
+// - Se quantidade > 5 e quantidade <=10 o desconto será de 3%
+// - Se quantidade > 10 o desconto será de 5%
+
 // = mostrar a saída dos produtos que ela escolher e a quantidade e o preço de cada produto
 // = mostrar também o desconto de cada produto
+
+const nomeProduto= (prompt("Digite seu produto: "))
+const quantidade= parseInt(prompt("Qual é a quantidade: "))
+const precoUnitario = parseInt(prompt("Digite o valor unitário: "))
+
+const total= quantidade * precoUnitario
+const totalDesconto1= total - (total * 2 /100)
+const totalDesconto2= total - (total * 3 / 100)
+const totalDesconto3= total - (total * 5 / 100)
+
+if (quantidade <= 5 ){
+    alert(` ${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto1}`)
+}else if( quantidade <= 10){
+    alert(`${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto2}`)
+}else{
+    alert(`${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto3}`)
+}
