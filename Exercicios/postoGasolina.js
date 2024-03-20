@@ -15,7 +15,7 @@
 // sabendo-se que o preço do litro da gasolina é R$ 5,30 e o preço do litro do álcool é R$ 4,90.
 
 // Dica: utilize switch case, operadores lógicos e relacionais e estrutura de condição para otimizar o algorítimo.
-
+const tipoCombustivel=(´´)
 
 //entrada de dados
 // = selecionar se deseja abastecer com alcool ou com gasolina;

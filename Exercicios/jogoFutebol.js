@@ -4,11 +4,22 @@
 //entrada de dados
 // = informar os dois times de futebol
 // = informar o placar do jogo
+const time1= prompt("Digite o nome do time 1: ")
+const time2= prompt("Digite o nome do time 2: ")
 
+const placarTime1= parseInt(prompt("Digite o placar do 1° time: "))
+const placarTime2= parseInt(prompt("Digite o placar do 2° time: "))
 
 //processamento
 // = realizar a validação através das estruturas condicionais
 // = verificar se os times ganharam, perderam ou empataram
-
+    if( placarTime1 >placarTime2){
+    alert(`O ${time1} ganhou de ${placarTime1} x ${placarTime2}`)
+    }else if(placarTime2 > placarTime1){
+    alert(`O ${time2} ganhou de ${placarTime2} x ${placarTime1}`)
+    }
+    else{
+    alert(`Os times empataram :  ${placarTime1}x${placarTime2}`)
+}
 //saida
 // = informar o resultado do jogo de futebol

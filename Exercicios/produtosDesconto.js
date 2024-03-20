@@ -31,14 +31,15 @@ const quantidade= parseInt(prompt("Qual é a quantidade: "))
 const precoUnitario = parseInt(prompt("Digite o valor unitário: "))
 
 const total= quantidade * precoUnitario
-const totalDesconto1= total - (total * 2 /100)
+const totalDesconto1= total -(total * 2 /100)
 const totalDesconto2= total - (total * 3 / 100)
 const totalDesconto3= total - (total * 5 / 100)
 
-if (quantidade <= 5 ){
-    alert(` ${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto1}`)
-}else if( quantidade <= 10){
-    alert(`${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto2}`)
-}else{
-    alert(`${nomeProduto} ${quantidade} ${precoUnitario} e obteve ${totalDesconto3}`)
-}
+
+    if (quantidade <= 5 ){
+    alert(` Nome= ${nomeProduto}, quantidade= ${quantidade}, valor= ${precoUnitario} e obteve de desconto ${totalDesconto1.toFixed(2)}`)
+    }else if( quantidade <= 10){
+    alert(`Nome ${nomeProduto}, quantidade= ${quantidade}, valor= ${precoUnitario} e obteve de desconto ${totalDesconto2.toFixed(2)}`)
+    }else{
+    alert(` Nome=${nomeProduto}, quantidade= ${quantidade} , valor= ${precoUnitario} e obteve de desconto ${totalDesconto3.toFixed}`)
+    }
