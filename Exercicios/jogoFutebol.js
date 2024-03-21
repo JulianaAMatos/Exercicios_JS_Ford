@@ -21,5 +21,9 @@ const placarTime2= parseInt(prompt("Digite o placar do 2° time: "))
     else{
     alert(`Os times empataram :  ${placarTime1}x${placarTime2}`)
 }
-//saida
-// = informar o resultado do jogo de futebol
+
+//OUTRA FORMA DE FAZER O EXERCÍCIO//
+// const placar= '3x2';
+// const [golsTime1, golsTime2]= placar.split('x')
+ 
+// console.log(`COR- ${golsTime1} x ${golsTime2}-PAL`)

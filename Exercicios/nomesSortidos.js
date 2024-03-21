@@ -7,7 +7,6 @@ const buscaNomes= prompt('Digite um nome para procurar:')
 const nomes= ['Juliana, Fabiana, João, Letícia, Rodrigo, Lucas, José, ALessandra, Fábio , Mônica']
 
 nomes+1
- const arr [Juliana, Fabiana, João, Letícia, Rodrigo, Lucas, José, ALessandra, Fábio , Mônica]
     if( nomes == buscaNomes ){
      alert(`Achei`)
      }else{

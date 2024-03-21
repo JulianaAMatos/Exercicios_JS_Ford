@@ -13,13 +13,13 @@
 //processamento
 // = verificar se o triangulo tem os 3 lados igual ou 2 lados iguais ou os 3 lados diferentes
 // = para isso temos que utilizar os operadores lógicos && || !
-const lado1 = 1
+const lado1 = 3
 const lado2 = 1
-const lado3 = 1
+const lado3 = 6
 
      if( lado1 == lado2 && lado3 == lado1 ){
     console.log(`Triângulo Equilátero: 3 lados iguais.`)
-    }else if( lado1 == lado2  || lado2 == lado3 || lado3 == lado1){
+    }else if( lado1 === lado2  || lado2 === lado3 || lado3 === lado1){
     console.log(`Triângulo Isóscele: 2 lados iguais`)
     }else{
     console.log(`Triângulo Escaleno: Lados diferentes`)
