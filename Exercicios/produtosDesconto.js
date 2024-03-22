@@ -27,8 +27,8 @@
 // = mostrar também o desconto de cada produto
 
 const nomeProduto= (prompt("Digite seu produto: "))
-const quantidade= parseInt(prompt("Qual é a quantidade: "))
-const precoUnitario = parseInt(prompt("Digite o valor unitário: "))
+const quantidade= parseFloat(prompt("Qual é a quantidade: "))
+const precoUnitario = parseFloat(prompt("Digite o valor unitário: "))
 
 const total= quantidade * precoUnitario
 const totalDesconto1= total -(total * 2 /100)
@@ -39,7 +39,7 @@ const totalDesconto3= total - (total * 5 / 100)
     if (quantidade <= 5 ){
     alert(` Nome= ${nomeProduto}, quantidade= ${quantidade}, valor= ${precoUnitario} e obteve de desconto ${totalDesconto1.toFixed(2)}`)
     }else if( quantidade <= 10){
-    alert(`Nome ${nomeProduto}, quantidade= ${quantidade}, valor= ${precoUnitario} e obteve de desconto ${totalDesconto2.toFixed(2)}`)
+    alert(`Nome ${nomeProduto}, quantidade= ${quantidade}, valor= ${precoUnitario} e obteve de desconto ${totalDesconto2.toFixed(2)}. Valor `)
     }else{
     alert(` Nome=${nomeProduto}, quantidade= ${quantidade} , valor= ${precoUnitario} e obteve de desconto ${totalDesconto3.toFixed}`)
     }
