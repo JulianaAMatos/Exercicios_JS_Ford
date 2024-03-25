@@ -18,3 +18,70 @@
 
 //saída de dados
 // imprimir na tela a taxa de mortalidade ou natalidade
+
+
+const taxaNatalidade= prompt(`Digite qual taxa você quer consultar:
+[N]- Natalidade [M]-Mortalidade`).toUpperCase()
+const numeroHabitantes= Number(prompt('Digite o número de habitantes: '))
+ 
+switch (taxaNatalidade) {
+    case 'N':
+        const criancaNascidas=Number(prompt('Digite o número de nascimentos: '))
+        const natalidade= (criancaNascidas * 1000)/ numeroHabitantes
+        alert(`A taxa de natalidade é = ${natalidade.toFixed(2)}`)
+        
+        break;
+
+    case 'M':
+        const numeroObito=Number(prompt('Digite o número de óbitos: '))
+        const mortalidade= (numeroObito * 1000) / numeroHabitantes
+        alert(`A taxa de mortalidade é =${mortalidade.toFixed(2)}`)
+        break;
+}
+
+//   function calculoNatalidadeMortalidade() {
+//     let numeroHabitantes
+
+//     do {
+//         numeroHabitantes= Number(window.prompt('Digite o número de habitantes: '))
+//         if(isNaN(numeroHabitantes)){
+//          window.alert('Você precisa digitar um número')
+//     }
+//     }while (isNaN(numeroHabitantes)); 
+    
+//     let taxaNatalidade;
+
+//     do{
+//      taxaNatalidade= window.prompt(`Digite qual taxa você quer consultar:
+// [N]- Natalidade [M]-Mortalidade`).toUpperCase()
+
+//     if (taxaNatalidade !== 'N' && taxaNatalidade !== 'M'){
+//         window.alert('ERRO: Digite uma opção válida!')
+//     }else{
+//         break;
+//     }
+//    }while(true);
+
+// switch (taxaNatalidade) {
+//     case 'N':
+//         let criancaNascidas
+//         do{
+//             criancaNascidas =Number(prompt('Digite o número de nascimentos: '))
+//          if(isNaN(criancaNascidas)){
+//             window.alert('Digite um número válido')
+//          }else{
+//             break;
+//          }
+//         }while(true)
+//         let natalidade= (criancaNascidas * 1000)/ numeroHabitantes
+//         window.alert(`A taxa de natalidade é = ${natalidade.toFixed(2)}`)
+        
+//         break;
+
+//     case 'M':
+//         let numeroObito=Number(prompt('Digite o número de óbitos: '))
+//         let mortalidade= (numeroObito * 1000) / numeroHabitantes
+//         window.alert(`A taxa de mortalidade é =${mortalidade.toFixed(2)}`)
+//         break;
+//     }
+// }
